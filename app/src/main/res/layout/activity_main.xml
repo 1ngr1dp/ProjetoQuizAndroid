@@ -7,13 +7,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <RadioGroup
+        android:id="@+id/rbg_principal"
+        android:layout_width="285dp"
+        android:layout_height="301dp"
+        android:layout_marginStart="203dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="478dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
 
+        <RadioButton
+            android:id="@+id/rb_a"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alternativa_a" />
+
+        <RadioButton
+            android:id="@+id/rb_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alternativa_b" />
+
+        <RadioButton
+            android:id="@+id/rb_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alternativa_c" />
+
+        <RadioButton
+            android:id="@+id/rb_d"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/alternativa_d" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_responder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="87dp"
+        android:layout_marginEnd="157dp"
+        android:text="@string/texto_botao"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.687" />
 </androidx.constraintlayout.widget.ConstraintLayout>
