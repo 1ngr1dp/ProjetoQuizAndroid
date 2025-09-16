@@ -38,10 +38,20 @@ int []respostasCorretas = {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+
+        txvPergunta = findViewById(R.id.txvPergunta);
+        rbg_principal = findViewById(R.id.rbg_principal);
+        btn_responder = findViewById(R.id.btn_responder);
+
+        carregarPerguntas();
+
+    ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+    }
+
+    private void carregarPerguntas() {
     }
 }
