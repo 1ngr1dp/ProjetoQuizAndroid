@@ -53,5 +53,13 @@ int []respostasCorretas = {
     }
 
     private void carregarPerguntas() {
+        if(indicePergunta < perguntas.length){
+            txvPergunta.setText(perguntas[indicePergunta]);
+            rbg_principal.clearCheck();
+            btn_responder.setEnabled(true);
+        }else{
+            txvPergunta.setText("fim");
+            btn_responder.setEnabled(false);;
+        }
     }
 }
